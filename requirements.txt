@@ -1,0 +1,10 @@
+jupyterlab
+numpy
+pandas
+matplotlib
+seaborn
+scipy
+matplotlib
+pyfits
+pycurl
+ephem
