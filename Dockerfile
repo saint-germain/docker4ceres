@@ -18,6 +18,6 @@ RUN apt-get update && \
     apt-get install -y libgsl-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-RUN git clone https://github.com/saint-germain/ceres
+RUN git clone https://github.com/nataliaalvarezb/ceres
 EXPOSE 8888
 CMD ["jupyter", "lab", "--ip='0.0.0.0'", "--port=8888", "--NotebookApp.token=''", "--no-browser", "--allow-root"]
