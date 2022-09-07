@@ -1,6 +1,6 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
-FROM python:2
+FROM --platform=linux/amd64 python:2
 
 USER root
 
@@ -16,8 +16,9 @@ RUN apt-get update && \
     apt-get install -y g++ && \
     apt-get install -y swig && \
     apt-get install -y libgsl-dev && \
+    apt-get install -y nano && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-RUN git clone https://github.com/nataliaalvarezb/ceres
+RUN git clone https://github.com/natsalvarezb/ceres
 EXPOSE 8888
 CMD ["jupyter", "lab", "--ip='0.0.0.0'", "--port=8888", "--NotebookApp.token=''", "--no-browser", "--allow-root"]
