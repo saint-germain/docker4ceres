@@ -1,0 +1,15 @@
+jupyterlab
+numpy
+pandas==0.20.0
+matplotlib
+seaborn
+scipy
+matplotlib
+pyfits
+pycurl
+ephem
+astropy
+PyAstronomy==0.11.0
+statsmodels==0.8.0
+emcee==2.2.1
+corner
